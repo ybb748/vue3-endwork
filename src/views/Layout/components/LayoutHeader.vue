@@ -25,9 +25,8 @@ onMounted(() => {
                     <RouterLink to="/">首页</RouterLink>
                 </li>
                 <li v-for="item in categoryList" :key="item.id">
-                    <RouterLink to="/">{{item.name}}</RouterLink>
+                    <RouterLink active-class="active" :to="`/category/${item.id}`">{{ item.name }}</RouterLink>
                 </li>
-
             </ul>
             <div class="search">
                 <i class="iconfont icon-search"></i>
@@ -41,6 +40,11 @@ onMounted(() => {
 
 
 <style scoped lang='scss'>
+
+.active {
+    color: $xtxColor;
+    border-bottom: 1px solid $xtxColor;
+}
 .app-header {
     background: #fff;
 
