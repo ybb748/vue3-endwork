@@ -4,14 +4,15 @@ import { createPinia } from 'pinia'
 
 import App from './App.vue'
 import router from './router'
-import { getCategoryAPI } from '@/apis/layout'
-const app = createApp(App)
+//const app = createApp(App)请求测试
 
 app.use(createPinia())
 app.use(router)
 
-getCategoryAPI().then(res => {
-    console.log(res);
+//getCategoryAPI().then(res => {请求测试
+//    console.log(res);
+//})
+app.direction(imageEm)({
+    mounted
 })
-
 app.mount('#app')

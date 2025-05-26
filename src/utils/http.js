@@ -2,7 +2,7 @@ import axios from 'axios'
 
 // 创建axios实例
 const http = axios.create({
-    baseURL: 'https://apifox.com/apidoc/shared-c05cb8d7-e591-4d9c-aff8-11065a0ec1de',
+    baseURL: 'http://pcapi-xiaotuxian-front-devtest.itheima.net',
     timeout: 5000
 })
 
